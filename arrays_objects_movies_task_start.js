@@ -59,6 +59,15 @@ var movies = [
 //   console.log(movieTitle)
 // }
 
+// Alternative way:
+for (var movie of movies){
+  var title = movie.title
+  var upperTitle = title.toUpperCase()
+  movie.title = upperTitle
+}
+console.log("movies: ", movies)
+
+
 // 2. Loop through the array and find the movie with the title Citizen Kane. log its year of release.
 // for (var i=0; i<movies.length; i++){
 //   if (movies[i].title === "Citizen Kane") {
@@ -68,12 +77,12 @@ var movies = [
 // }
 
 // 3. Using a different kind of loop, iterate through the movies and log each movie's title and audience rating.
-for(var movie of movies){
-  var title = movie.title
-  var audienceRating = movie.ratings.audience
-  console.log("movie: ", title)
-  console.log("rating: ", audienceRating)
+// for(var movie of movies){
+//   var title = movie.title
+//   var audienceRating = movie.ratings.audience
+//   console.log("movie: ", title)
+//   console.log("rating: ", audienceRating)
   
-}
+// }
 
 
