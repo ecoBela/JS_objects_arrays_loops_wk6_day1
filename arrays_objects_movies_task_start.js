@@ -76,6 +76,14 @@ console.log("movies: ", movies)
 //   }
 // }
 
+// Alternative solution:
+for (var movie of movies){
+  if(movie.title.toUpperCase() === "Citizen Kane".toUpperCase()) {
+    console.log(`The year of release for Citizen Kane: ${movie.year}`);
+  }
+}
+
+
 // 3. Using a different kind of loop, iterate through the movies and log each movie's title and audience rating.
 // for(var movie of movies){
 //   var title = movie.title
