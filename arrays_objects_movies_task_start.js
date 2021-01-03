@@ -93,4 +93,9 @@ for (var movie of movies){
   
 // }
 
+// Alternative solution:
+
+for (var movie of movies){
+  console.log(`${movie.title} has an audience rating of ${movie.ratings.audience}`);
+}
 
